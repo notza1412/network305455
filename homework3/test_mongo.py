@@ -50,7 +50,7 @@ class Login(Resource):
         else:
             return {}
 
-class WorkTime(Resource):
+class CheckTime(Resource):
     def get(self):
         args = parser.parse_args()
         id = args['id']
@@ -65,7 +65,7 @@ class WorkTime(Resource):
 
 api.add_resource(Register, '/api/register')
 api.add_resource(Login, '/api/login')
-api.add_resource(WorkTime,'/api/worktime')
+api.add_resource(CheckTime,'/api/Check')
 
 if __name__ == '__main__':
 	app.run(host='0.0.0.0', port=5100)
