@@ -15,7 +15,7 @@ parser.add_argument('firstname')
 parser.add_argument('lastname')
 parser.add_argument('employee_number')
 
-db = client.db_work
+db = client.db_test
 
 member = db.member
 
@@ -68,4 +68,4 @@ api.add_resource(Login, '/api/login')
 api.add_resource(WorkTime,'/api/worktime')
 
 if __name__ == '__main__':
-	app.run(host='0.0.0.0', port=5500)
+	app.run(host='0.0.0.0', port=5100)
